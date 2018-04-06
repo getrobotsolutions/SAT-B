@@ -45,9 +45,9 @@ Hotel_en[2] = new Array ( "Charley's Grilled Subs","Famous for its award-winning
 Hotel_en[3] = new Array ( "Green Beans Coffee","On the go? Come enjoy your favorite hot beverage and buy a “Cup of Joe” for troops serving far from home and have it delivered with your own personal note of encouragement.", "images/8.png", "images/offers/Green Beans Coffee/Green Beans Coffee-1.png" );
 Hotel_en[4] = new Array ( "Rosario's","Featuring a newly-expanded restaurant service in Terminal B, San Antonio’s own Rosario’s strives to exceed guests’ expectations on food, service and overall design, while truly creating a sense of San Antonio within the airport.", "images/16.png", "images/offers/Rosarios/Rosarios-1.png" );
 Hotel_en[5] = new Array ( "Starbucks","Handcrafted beverages and a name you can trust – it doesn’t get any cozier than that. Curl up with a favorite brew or Tazo tea creation today … and don’t forget the biscotti..", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
-Hotel_en[6] = new Array ( "Good Fellows","Handcrafted beverages and a name you can trust – it doesn’t get any cozier than that. Curl up with a favorite brew or Tazo tea creation today … and don’t forget the biscotti..", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
-Hotel_en[7] = new Array ( "SA Express News","Handcrafted beverages and a name you can trust – it doesn’t get any cozier than that. Curl up with a favorite brew or Tazo tea creation today … and don’t forget the biscotti..", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
-Hotel_en[8] = new Array ( "Sbarro","Handcrafted beverages and a name you can trust – it doesn’t get any cozier than that. Curl up with a favorite brew or Tazo tea creation today … and don’t forget the biscotti..", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
+Hotel_en[6] = new Array ( "Good Fellows","", "images/Good Fellows.jpeg", "images/offers/Starbucks/Starbucks-1.png" );
+Hotel_en[7] = new Array ( "SA Express News","", "images/Stars of San Antonio.jpeg", "images/offers/Starbucks/Starbucks-1.png" );
+Hotel_en[8] = new Array ( "Sbarro","", "images/17.png", "images/offers/Starbucks/Starbucks-1.png" );
 
 
 
@@ -59,11 +59,9 @@ Hotel_sp[2] = new Array ( "Charley's Grilled Subs","Famoso por su galardonado Ph
 Hotel_sp[3] = new Array ( "Green Beans Coffee","Muy activo? Ven a disfrutar de tu bebida caliente favorita y compra una Cup of Joe para las tropas que sirven lejos de casa y haz que te la entreguen con tu nota personal de aliento.", "images/8.png", "images/offers/Green Beans Coffee/Green Beans Coffee-1.png"  );
 Hotel_sp[4] = new Array ( "Rosario's","Con un nuevo servicio de restaurante expandido en la Terminal B, el propio Rosario de San Antonio se esfuerza por exceder las expectativas de los huéspedes en cuanto a comida, servicio y diseño general, mientras que realmente crea una sensación de San Antonio dentro del aeropuerto.", "images/16.png", "images/offers/Rosarios/Rosarios-1.png" );
 Hotel_sp[5] = new Array ( "Starbucks","Bebidas artesanales y un nombre en el que puede confiar: no hay nada más acogedor que eso. Acurrúcate con una bebida favorita o una creación de té Tazo hoy ... y no te olvides de los biscotti.", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
-Hotel_sp[6] = new Array ( "Good Fellows","Handcrafted beverages and a name you can trust – it doesn’t get any cozier than that. Curl up with a favorite brew or Tazo tea creation today … and don’t forget the biscotti..", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
-Hotel_sp[7] = new Array ( "SA Express News","Handcrafted beverages and a name you can trust – it doesn’t get any cozier than that. Curl up with a favorite brew or Tazo tea creation today … and don’t forget the biscotti..", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
-Hotel_sp[8] = new Array ( "Sbarro","Handcrafted beverages and a name you can trust – it doesn’t get any cozier than that. Curl up with a favorite brew or Tazo tea creation today … and don’t forget the biscotti..", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
-
-
+Hotel_sp[6] = new Array ( "Good Fellows","", "images/Good Fellows.jpeg", "images/offers/Starbucks/Starbucks-1.png" );
+Hotel_sp[7] = new Array ( "SA Express News","", "images/Stars of San Antonio.jpeg", "images/offers/Starbucks/Starbucks-1.png" );
+Hotel_sp[8] = new Array ( "Sbarro","", "images/17.png", "images/offers/Starbucks/Starbucks-1.png" );
 
 
 if(readCookie("CurrentLanguage") === "English")
