@@ -14,7 +14,7 @@
   .part1{ height: 660px;margin-top: -22px;margin-left: -15px;}
   .part2{
          background-color: #FF6600 ;
-      height: 700px;
+      height: auto;
       width: 616px;
       margin-top: -20px;
       padding: 15px;
@@ -134,12 +134,14 @@
 
     .restau-image{
           background-color: white;
-    padding: 10px;
-    text-align: center;
+          padding: 10px;
+          text-align: center;
+          height: 400px;
     }
     .icon{
       
-      width: 500px;
+      width: 550px;
+      height: 380px;
     }
   #dialog-overlay {
 
