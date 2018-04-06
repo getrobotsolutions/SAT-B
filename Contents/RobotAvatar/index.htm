@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html" charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+	<link rel="stylesheet" type="text/css" href="RobotAvatar.css" />
+
+	<script language="JavaScript" type="text/javascript" src="../../Scripts/FlashPlayer.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+
+	
+	<script src="../../Scripts/jquery-3.3.1.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+	<link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+
+<script language="JavaScript" type="text/javascript" src="RobotAvatar.js"></script>
+
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="../../css/style_riyadh.css">-->
+  <!--<script type="text/javascript">-->
+    <!--UpdateSession(8);-->
+    <!--$(document).ready(function(){-->
+    <!--if(readCookie("lang")=="english"){-->
+      <!--window.external.ChangeLanguage("en-gb");-->
+      <!--window.external.SetVolume(1);-->
+      <!--PlaySpeech("Look your best because now you are about to be a robot.");-->
+      <!--$('#change-us').addClass('active');-->
+      <!--$('#change-ar').removeClass('active');-->
+      <!--$('.title').text("Robot Avatar");-->
+      <!--$('#shot img').attr("src","Image/avatar_shot_nor.png");-->
+      <!--$('.deltext').css({"font-size":"32px", "line-height":"32px","font-family":"Bukra-Regular"});-->
+      <!--$('.deltext').text("If you want to delete the Avatar now press the 'DELETE' button.")-->
+     <!---->
+    <!--$('#delete').attr('src','Image/Avatar_delete_none.png');-->
+      <!--deletePic="Image/Avatar_delete_none.png";-->
+      <!--deletePicNor="Image/Avatar_delete_nor.png";-->
+      <!--del();-->
+      <!---->
+    <!--}-->
+    <!--else if (readCookie("lang")=="arabic") {-->
+      <!--window.external.ChangeLanguage("ar-eg");-->
+      <!--window.external.SetVolume(0.4);-->
+      <!--PlaySpeech("كُنْ مُسْتَعِدَاً ،أَنْتَ عَلىَ وَشَكِ أَنْ تُصْبِحَ رَجُلاً آَلِياً");-->
+      <!--$('#change-us').removeClass('active');-->
+      <!--$('#change-ar').addClass('active');-->
+      <!--$('.title').text("الصّورة الرّمزية");-->
+      <!--$('.deltext').css({"font-size":"44px", "line-height":"31px", "font-family":"Bukra-Regular"});-->
+      <!--$('.deltext').text("إذا كنت ترغب في حذف <br>-->
+                          <!--الصورة الرمزية الآن <br>-->
+                          <!--اضغط على زر &quot;حذف&quot;");-->
+    <!---->
+      <!--$('#shot img').attr('src','Image/avatar_shot_nor_ar.png');-->
+      <!--$('#delete').attr('src','Image/Avatar_delete_none_ar.png');-->
+        <!--deletePic="Image/Avatar_delete_none_ar.png";-->
+        <!--deletePicNor="Image/Avatar_delete_nor_ar.png";-->
+        <!--del();   -->
+      <!---->
+    <!--}-->
+  <!--});-->
+  <!--</script>-->
+</head>
+
+<body onload="JSMain()" onbeforeunload="JSUnload()"  style="padding: 0; margin: 0; background-repeat: no-repeat; width: 1080px; height: 1920px; " class="noselect unselectable">
+<header>
+	<div class="logo">
+		<img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
+	</div>
+	<span class="col-sm-3 date-time" style="text-align: left; color: #3c3c3c">
+        <div style="font-weight: bold; font-size: 30px;" >San Antonio, TX</div>
+          <div id="content_air" style="font-size: 25px">San Antonio, TX</div>
+          <div id="content_date" style="font-size: 25px"></div>
+          <span id="condition" style="font-size: 25px"></span>
+        <div>
+            <img id ="image-zoom" style="width: 60px" src="">
+             <span id="temp" style="font-size: 35px; font-weight: bold"></span>
+        </div>
+    </span>
+</header>
+
+<nav>
+	<img class="home" src="../../assets/icons/home.png" alt="home" onclick="FC_ContentsCall('Home')">
+	<div class="nav-language">
+		<button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
+		<button onclick="LanguageChange('spanish');" id="btn_spanish" class="btn-spanish">Español</button>
+	</div>
+</nav>
+
+
+<div class="main">
+	<div class="canvas">
+		<canvas id="camImage" width="935" height="520"></canvas>
+	</div>
+
+	<div class="bg">
+		<h1 class="title" style="">Robot Avatar</h1>
+		<img src="Image/bg-new.png">
+		<p class="deltext" id="deltext" style="">If you want to delete the Avatar now press the 'DELETE' button.</p>
+	</div>
+
+	<div class="shot" id="shot">
+		<img id="shot" src="Image/avatar_shot_nor.png" onclick="shot()">
+	</div>
+
+ 	 <div class="frame" id="frame" style="display: none">
+		<img src="Image/avatar_frame.png">
+	</div>
+	
+	<div class="number" id="number" style="display: none">
+		<img id="number_img" src="Image/3_re.png">
+	</div>
+ 
+	<div class="delete">
+		<button  onclick="del()" id="delete" disabled>DELETE</button>
+	</div>
+</div>
+
+<footer style="top: 1460px;">
+	<img src="../../assets/slide1.png" alt="slider1">
+	<img src="../../assets/bottom-line.png">
+</footer>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+</body>
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+</script>
+</html>
