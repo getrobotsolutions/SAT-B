@@ -45,9 +45,9 @@ Hotel_en[2] = new Array ( "Charley's Grilled Subs","Famous for its award-winning
 Hotel_en[3] = new Array ( "Green Beans Coffee","On the go? Come enjoy your favorite hot beverage and buy a “Cup of Joe” for troops serving far from home and have it delivered with your own personal note of encouragement.", "images/8.png", "images/offers/Green Beans Coffee/Green Beans Coffee-1.png" );
 Hotel_en[4] = new Array ( "Rosario's","Featuring a newly-expanded restaurant service in Terminal B, San Antonio’s own Rosario’s strives to exceed guests’ expectations on food, service and overall design, while truly creating a sense of San Antonio within the airport.", "images/16.png", "images/offers/Rosarios/Rosarios-1.png" );
 Hotel_en[5] = new Array ( "Starbucks","Handcrafted beverages and a name you can trust – it doesn’t get any cozier than that. Curl up with a favorite brew or Tazo tea creation today … and don’t forget the biscotti..", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
-Hotel_en[6] = new Array ( "Good Fellows","", "images/Good Fellows.jpeg", "images/offers/Starbucks/Starbucks-1.png" );
-Hotel_en[7] = new Array ( "SA Express News","", "images/Stars of San Antonio.jpeg", "images/offers/Starbucks/Starbucks-1.png" );
-Hotel_en[8] = new Array ( "Sbarro","", "images/17.png", "images/offers/Starbucks/Starbucks-1.png" );
+Hotel_en[6] = new Array ( "Good Fellows","", "images/Good Fellows.jpeg", "images/offers/404.png" );
+Hotel_en[7] = new Array ( "SA Express News","", "images/Stars of San Antonio.jpeg", "images/offers/404.png" );
+Hotel_en[8] = new Array ( "Sbarro","", "images/17.png", "images/offers/404.png" );
 
 
 

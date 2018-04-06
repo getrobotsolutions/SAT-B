@@ -58,12 +58,12 @@ if(readCookie("CurrentLanguage") === "English")
 {
   var Hotel = new Array ( );
    Hotel = Shop_en ;
-   document.getElementById("HotelDesc").innerHTML = "Homes need love, too. That’s why there’s Brookstone, a bottomless collection of fun and interactive products for the abode. Nice to look at and rooted in purpose, it’s okay to touch the merchandise here.";
+   document.getElementById("HotelDesc").innerHTML = "InMotion Entertainment is the largest entertainment and electronics airport retailer in the U.S. With a unique blend of cutting-edge electronics, accessories, music, movies and rental services, we guarantee to make your next trip more enjoyable. InMotion: Just press play.";
 }else if(readCookie("CurrentLanguage") === "Spanish")
 {
    var Hotel = new Array ( );
    Hotel = Shop_sp ;
-    document.getElementById("HotelDesc").innerHTML = "Las casas también necesitan amor. Es por eso que está Brookstone, una colección sin fondo de productos divertidos e interactivos para la residencia. Es bueno mirar y enraizar en el propósito, está bien tocar la mercancía aquí.";
+    document.getElementById("HotelDesc").innerHTML = "InMotion Entertainment es el minorista de aeropuertos de entretenimiento y electrónica más grande de los EE. UU. Con una combinación única de electrónica de vanguardia, accesorios, música, películas y servicios de alquiler, le garantizamos que su próximo viaje sea más agradable. InMotion: solo presiona play.";
 }
 
 
