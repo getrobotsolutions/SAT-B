@@ -9,7 +9,7 @@ var initial=setTimeout(redirect,60000);
 
 $(document).click(function(event) {
     clearTimeout( initial );
-    initial=setTimeout(redirect,12000);
+    initial=setTimeout(redirect,6000);
 });
 //-----------------------------------------------------
 function LanguageChange(lang)
@@ -38,18 +38,23 @@ function LanguageChange(lang)
 
 var Shop_en = new Array ( );
 
+Shop_en[1] = new Array ( "Brookstone","Homes need love, too. That’s why there’s Brookstone, a bottomless collection of fun and interactive products for the abode. Nice to look at and rooted in purpose, it’s okay to touch the merchandise here.", "images/1.png", "images/offers/Brookstone/Brookstone-1.png" );
 Shop_en[0] = new Array ( "InMotion Entertainment","InMotion Entertainment is the largest entertainment and electronics airport retailer in the U.S. With a unique blend of cutting-edge electronics, accessories, music, movies and rental services, we guarantee to make your next trip more enjoyable. InMotion: Just press play.", "images/2.png", "images/offers/InMotion/InMotion-1.png" );
-Shop_en[1] = new Array ( "Stars of San Antonio","Stock up for the one who’s deep in your heart. Texas-themed jewelry, shirts and sauces abound at this shop that offers 10% for every $100 purchase.", "images/6.png", "images/offers/Stars of San Antonio/Stars of San Antonio-1.png" );
-Shop_en[2] = new Array ( "Texas Monthly News","Texas Monthly News gives travelers the customer convenience and satisfaction with an authentic brand experience providing the best selection of local, regional, national, international newspapers, magazines and periodicals, along with travel friendly essentials and accessories.", "images/7.png" , "images/offers/404.png" );
+Shop_en[2] = new Array ( "Marcy's Travel Center","Maximize your travel time by visiting the Marcy’s Travel Center, fully equipped with Internet access, copier and mail service. Luggage solutions, including suitcases and tags, make Marcy’s the best travel companion.", "images/3.png", "images/offers/404.png" );
+Shop_en[3] = new Array ( "Simply Books","Fewer things compare to a perfectly selected book and cup of coffee. Both can be found at Simply Books, which features Starbucks and the best-sellers. The only airport-based bookstore in the continental U.S. that can make that claim.", "images/5.png" , "images/offers/404.png" );
+Shop_en[4] = new Array ( "Stars of San Antonio","Stock up for the one who’s deep in your heart. Texas-themed jewelry, shirts and sauces abound at this shop that offers 10% for every $100 purchase.", "images/6.png", "images/offers/Stars of San Antonio/Stars of San Antonio-1.png" );
+Shop_en[5] = new Array ( "UETA Duty Free","UETA Duty Free offers top quality spirits and tobaccos for international travelers, and brand name fragrances, cosmetics and luxury gifts for all. High-end merchandise at dramatically low prices will impress the most discriminating shopper…and a discount aisle offers another 25% off.", "images/8.png" , "images/offers/404.png" );
 
 
 var Shop_sp = new Array ( );
 
 
+Shop_sp[1] = new Array ( "Brookstone","Las casas también necesitan amor. Es por eso que está Brookstone, una colección sin fondo de productos divertidos e interactivos para la residencia. Es bueno mirar y enraizar en el propósito, está bien tocar la mercancía aquí.", "images/1.png" , "images/offers/Brookstone/Brookstone-1.png");
 Shop_sp[0] = new Array ( "InMotion Entertainment","InMotion Entertainment es el minorista de aeropuertos de entretenimiento y electrónica más grande de los EE. UU. Con una combinación única de electrónica de vanguardia, accesorios, música, películas y servicios de alquiler, le garantizamos que su próximo viaje sea más agradable. InMotion: solo presiona play.", "images/2.png", "images/offers/InMotion/InMotion-1.png" );
-Shop_sp[1] = new Array ( "Stars of San Antonio","Abastécete de quien está en lo más profundo de tu corazón. En esta tienda, abundan las joyas, camisetas y salsas con temas de Texas, que ofrecen un 10% por cada compra de $ 100..", "images/6.png", "images/offers/Stars of San Antonio/Stars of San Antonio-1.png" );
-Shop_sp[2] = new Array ( "Texas Monthly News","Texas Monthly News ofrece a los viajeros la comodidad y satisfacción del cliente con una experiencia de marca auténtica que ofrece la mejor selección de periódicos, revistas y publicaciones periódicas locales, regionales, nacionales e internacionales, junto con accesorios y artículos esenciales para viajes.", "images/7.png" , "images/offers/404.png" );
-
+Shop_sp[2] = new Array ( "Marcy's Travel Center","Maximice su tiempo de viaje visitando el Marcy's Travel Center, totalmente equipado con acceso a Internet, fotocopiadora y servicio de correo. Las soluciones de equipaje, que incluyen maletas y etiquetas, hacen de Marcy's la mejor compañera de viaje.", "images/3.png" , "images/offers/404.png" );
+Shop_sp[3] = new Array ( "Simply Books","Menos cosas se comparan con un libro y una taza de café perfectamente seleccionados. Ambos se pueden encontrar en Simply Books, que presenta Starbucks y los best-sellers. La única librería basada en el aeropuerto en los EE. UU. Continentales que puede hacer esa afirmación.", "images/5.png" , "images/offers/404.png" );
+Shop_sp[4] = new Array ( "Stars of San Antonio","Abastécete de quien está en lo más profundo de tu corazón. En esta tienda, abundan las joyas, camisetas y salsas con temas de Texas, que ofrecen un 10% por cada compra de $ 100..", "images/6.png", "images/offers/Stars of San Antonio/Stars of San Antonio-1.png" );
+Shop_sp[5] = new Array ( "UETA Duty Free","UETA Duty Free ofrece licores y tabacos de alta calidad para viajeros internacionales, y fragancias de marca, cosméticos y regalos de lujo para todos. La mercancía de alta gama a precios dramáticamente bajos impresionará al comprador más exigente ... y un pasillo de descuento ofrece otro 25% de descuento.", "images/8.png" , "images/offers/404.png" );
 
 
 
@@ -58,12 +63,12 @@ if(readCookie("CurrentLanguage") === "English")
 {
   var Hotel = new Array ( );
    Hotel = Shop_en ;
-   document.getElementById("HotelDesc").innerHTML = "InMotion Entertainment is the largest entertainment and electronics airport retailer in the U.S. With a unique blend of cutting-edge electronics, accessories, music, movies and rental services, we guarantee to make your next trip more enjoyable. InMotion: Just press play.";
+   document.getElementById("HotelDesc").innerHTML = "";
 }else if(readCookie("CurrentLanguage") === "Spanish")
 {
    var Hotel = new Array ( );
    Hotel = Shop_sp ;
-    document.getElementById("HotelDesc").innerHTML = "InMotion Entertainment es el minorista de aeropuertos de entretenimiento y electrónica más grande de los EE. UU. Con una combinación única de electrónica de vanguardia, accesorios, música, películas y servicios de alquiler, le garantizamos que su próximo viaje sea más agradable. InMotion: solo presiona play.";
+    document.getElementById("HotelDesc").innerHTML = "";
 }
 
 
@@ -93,6 +98,7 @@ for (var i = 0; i< Hotel.length; i++) {
 
               var HotelName = $(this).text()    
               getHodetlDetails(HotelName);
+     document.getElementById("mapBtn").style.visibility = "visible";
 
             });
 
