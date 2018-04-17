@@ -157,7 +157,7 @@ function ShowPopup(){
 }
 
 $(document).ready(function(){
-    ShowTime();
+
 
     $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {
         $('#dialog-overlay, #dialog-box').hide();
@@ -166,30 +166,41 @@ $(document).ready(function(){
 })
 
 
-var city = "San Antonio";
-var searchtext = "select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='f'";
-var queryURL = "https://query.yahooapis.com/v1/public/yql?q="+ searchtext + "&format=json";
+setTimeout(function () {
 
-$.getJSON(queryURL, function (data) {
+    ShowTime();
+    console.log("Time started");
 
-    var results = data.query.results;
-    var firstResult = results.channel.item.condition;
-    console.log(firstResult);
+    var city = "San Antonio";
+    var searchtext = "select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='f'";
+    var queryURL = "https://query.yahooapis.com/v1/public/yql?q="+ searchtext + "&format=json";
+
+    $.getJSON(queryURL, function (data) {
+
+        var results = data.query.results;
+        var firstResult = results.channel.item.condition;
+        console.log(firstResult);
 
 
-    var location = 'Unknown'; // not returned in response
-    var temp = firstResult.temp;
-    var text = firstResult.text;
-    var image =  firstResult.code;
-    var loc = 'https://s.yimg.com/zz/combo?a/i/us/we/52/'+image+'.gif' ;
+        var location = 'Unknown'; // not returned in response
+        var temp = firstResult.temp;
+        var text = firstResult.text;
+        var image =  firstResult.code;
+        var loc = 'https://s.yimg.com/zz/combo?a/i/us/we/52/'+image+'.gif' ;
 
-    // $('#temp').append('The temperature is <strong>' + temp + '</strong><sup>°F</sup> Forecast calls for '+text);
+        // $('#temp').append('The temperature is <strong>' + temp + '</strong><sup>°F</sup> Forecast calls for '+text);
 
-    $('#condition').append(text);
-    $('#temp').append(temp+ '</strong><sup>°F</sup>');
+        $('#condition').append(text);
+        $('#temp').append(temp+ '</strong><sup>°F</sup>');
 
-    $('#image-zoom').attr("src",loc);
-});
+        $('#image-zoom').attr("src",loc);
+    });
+    console.log("Weather started");
+
+
+}, 3000);
+
+
 
 function ShowTime()
 {
