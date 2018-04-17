@@ -336,3 +336,12 @@ a.button {
 	font-size: 25px;
 	 font-weight: bold;
 }
+.fiesta-icon{
+  position: absolute;
+    color: black;
+    font-size: 27px;
+    z-index: 1;
+}
+.fixed-height{
+	max-height: 402px;
+}

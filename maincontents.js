@@ -1,8 +1,9 @@
 ﻿
 
+function JSMain(){
 
+}
 var speak = new Array( );
-
 
 function LanguageChange(lang)
 {
@@ -79,6 +80,9 @@ function FC_ContentsCall(strContentsName, strLanguage)
         case "Avatar":
             PlaySpeech(speak[3]);
             location.href = "Contents/RobotAvatar/index.htm";
+            break;
+        case "Fiesta":
+            location.href = "Contents/Fiesta/index.html";
             break;
         case "Config":
             location.href = "Config/Config.htm";
