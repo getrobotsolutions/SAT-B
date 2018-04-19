@@ -174,7 +174,7 @@ function ShowPopup(src){
   }
   else{
     if(readCookie("CurrentLanguage") === "English")
-      PlaySpeech("Please take a picture with your phone and show merchant for your special offer.");
+      PlaySpeech("Please take a picture with your phone and show Merchant for your special offer.");
     else if(readCookie("CurrentLanguage") === "Spanish")
       PlaySpeech("Por favor, tome una foto con su teléfono y muestre al comerciante su oferta especial.");
   
