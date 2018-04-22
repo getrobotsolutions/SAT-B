@@ -99,9 +99,79 @@ for (var i = 0; i< Hotel.length; i++) {
  $("ul[id*=dynamic-list] li").click(function () {
                
 
+
+
+                function getDate() {
+                var now     = new Date(); 
+                var year    = now.getFullYear();
+                var month   = now.getMonth()+1; 
+                var day     = now.getDate();
+
+                if(month.toString().length == 1) {
+                    var month = '0'+month;
+                }
+                if(day.toString().length == 1) {
+                    var day = '0'+day;
+                }   
+                 var dateTime = year+'/'+month+'/'+day;   
+                 return dateTime;
+            }
+
+            function getTime() {
+                var now     = new Date(); 
+                var hour    = now.getHours();
+                var minute  = now.getMinutes();
+                var second  = now.getSeconds(); 
+                if(hour.toString().length == 1) {
+                    var hour = '0'+hour;
+                }
+                if(minute.toString().length == 1) {
+                    var minute = '0'+minute;
+                }
+                if(second.toString().length == 1) {
+                    var second = '0'+second;
+                }   
+                var Time = hour+':'+minute+':'+second;   
+                 return Time;
+            }
+                   
+
               var HotelName = $(this).text()    
               getHodetlDetails(HotelName);
               document.getElementById("mapBtn").style.visibility = "visible";
+              var language = readCookie("CurrentLanguage");
+               var current_date =  getDate();
+              var current_time = getTime();
+              var terminal = 'Terminal-B';
+
+
+
+              $.ajax({
+                         url:'http://ars.xamut.com/robot/geteatdata.php',
+                         type:'POST',
+                                  //data:hotelName,  
+                         data: {
+                          'Name': HotelName, 
+                          'date': current_date,
+                          'time': current_time,
+                          'language': language,
+                          'terminal':terminal
+                        },
+                                  success:function(result){
+                                   //   $("#response").text(result);
+                                      console.log(result);
+                               //       alert(result); 
+                                  },
+                                  failure: function(result) {
+                                    // alert(result); 
+                                }
+
+                          });
+                  
+
+
+
+
             });
 
 
