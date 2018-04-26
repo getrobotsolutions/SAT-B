@@ -3,6 +3,9 @@
 function JSMain(){
 
 }
+if(readCookie("CurrentLanguage")==""){
+    writeCookie("CurrentLanguage", "English", 30);
+}
 var speak = new Array( );
 
 function LanguageChange(lang)
