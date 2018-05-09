@@ -3,7 +3,7 @@
 //-----------------------------------------------------
 
 function redirect(){
-    window.location.href = "../../maincontents.htm";
+    window.location.href = "../../main.htm";
 }
 var initial=setTimeout(redirect,60000);
 
@@ -45,10 +45,11 @@ Hotel_en[1] = new Array ( "Bon Du Monde","Stop by and pick up a chocolate surpri
 Hotel_en[2] = new Array ( "Charley's Grilled Subs","Famous for its award-winning Philly Cheese Steak, chicken sandwiches, subs, gourmet fries, natural lemonade, salads and healthy options, Charley’s Grilled Subs prepares its sandwiches right in front of the customer, providing high-quality meat, fresh produce and attentive service.", "images/4.png" , "images/offers/404.png");
 Hotel_en[3] = new Array ( "Good Fellows","", "images/Good Fellows.jpeg");
 Hotel_en[4] = new Array ( "Green Beans Coffee","On the go? Come enjoy your favorite hot beverage and buy a “Cup of Joe” for troops serving far from home and have it delivered with your own personal note of encouragement.", "images/8.png", "images/offers/Green Beans Coffee/Green Beans Coffee-1.png" );
-Hotel_en[5] = new Array ( "Rosario's","Featuring a newly-expanded restaurant service in Terminal B, San Antonio’s own Rosario’s strives to exceed guests’ expectations on food, service and overall design, while truly creating a sense of San Antonio within the airport.", "images/16.png", "images/offers/Rosarios/Rosarios-1.png" );
-Hotel_en[6] = new Array ( "SA Express News","", "images/Stars of San Antonio.jpeg");
-Hotel_en[7] = new Array ( "Sbarro","Best known for freshly-made, hand-tossed pizza topped with the finest ingredients. Sbarro fresh Italian cooking features time honored recipes including pasta, salads, entrées and desserts.", "images/17.png" , "images/offers/404.png");
-Hotel_en[8] = new Array ( "Starbucks","Handcrafted beverages and a name you can trust – it doesn’t get any cozier than that. Curl up with a favorite brew or Tazo tea creation today … and don’t forget the biscotti..", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
+Hotel_en[5] = new Array ( "R Sala Bebida Botana Bar","R Sala Bebida Botana Bar goers passengers a relaxed lounge, serving light fare with a distinctive San Antonio Mex-Chic flavor, while Starbucks goers the world’s most recognizable brand of coffee — all to create a destination to relax and recharge.", "images/15.png", "images/offers/R-Salsa/R-Salsa-1.png" );
+Hotel_en[6] = new Array ( "Rosario's","Featuring a newly-expanded restaurant service in Terminal B, San Antonio’s own Rosario’s strives to exceed guests’ expectations on food, service and overall design, while truly creating a sense of San Antonio within the airport.", "images/16.png", "images/offers/Rosarios/Rosarios-1.png" );
+Hotel_en[7] = new Array ( "SA Express News","", "images/Stars of San Antonio.jpeg");
+Hotel_en[8] = new Array ( "Sbarro","Best known for freshly-made, hand-tossed pizza topped with the finest ingredients. Sbarro fresh Italian cooking features time honored recipes including pasta, salads, entrées and desserts.", "images/17.png" , "images/offers/404.png");
+Hotel_en[9] = new Array ( "Starbucks","Handcrafted beverages and a name you can trust – it doesn’t get any cozier than that. Curl up with a favorite brew or Tazo tea creation today … and don’t forget the biscotti..", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
 
 
 var Hotel_sp = new Array ( );
@@ -58,10 +59,11 @@ Hotel_sp[1] = new Array ( "Bon Du Monde","Venga y recoja una sorpresa de chocola
 Hotel_sp[2] = new Array ( "Charley's Grilled Subs","Famoso por su galardonado Philly Cheese Steak, sándwiches de pollo, sándwiches, papas fritas gourmet, limonada natural, ensaladas y opciones saludables, Charley's Grilled Subs prepara sus sándwiches justo en frente del cliente, ofreciendo carne de alta calidad, productos frescos y un servicio atento.", "images/4.png" , "images/offers/404.png");
 Hotel_sp[3] = new Array ( "Good Fellows","", "images/Good Fellows.jpeg");
 Hotel_sp[4] = new Array ( "Green Beans Coffee","Muy activo? Ven a disfrutar de tu bebida caliente favorita y compra una Cup of Joe para las tropas que sirven lejos de casa y haz que te la entreguen con tu nota personal de aliento.", "images/8.png", "images/offers/Green Beans Coffee/Green Beans Coffee-1.png"  );
-Hotel_sp[5] = new Array ( "Rosario's","Con un nuevo servicio de restaurante expandido en la Terminal B, el propio Rosario de San Antonio se esfuerza por exceder las expectativas de los huéspedes en cuanto a comida, servicio y diseño general, mientras que realmente crea una sensación de San Antonio dentro del aeropuerto.", "images/16.png", "images/offers/Rosarios/Rosarios-1.png" );
-Hotel_sp[6] = new Array ( "SA Express News","", "images/Stars of San Antonio.jpeg");
-Hotel_sp[7] = new Array ( "Sbarro","Mejor conocido por pizza recién hecha y hecha a mano con los mejores ingredientes. La cocina italiana fresca de Sbarro ofrece recetas de larga tradición como pasta, ensaladas, entrantes y postres.", "images/17.png" , "images/offers/404.png");
-Hotel_sp[8] = new Array ( "Starbucks","Bebidas artesanales y un nombre en el que puede confiar: no hay nada más acogedor que eso. Acurrúcate con una bebida favorita o una creación de té Tazo hoy ... y no te olvides de los biscotti.", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
+Hotel_sp[5] = new Array ( "R Sala Bebida Botana Bar","R Sala Bebida Botana Bar ofrece a los pasajeros un lounge relajado, que sirve comida ligera con un distintivo sabor Mex-Chic de San Antonio, mientras que Starbucks disfruta de la marca de café más reconocida del mundo, todo para crear un destino para relajarse y recargar energías.", "images/15.png", "images/offers/R-Salsa/R-Salsa-1.png" );
+Hotel_sp[6] = new Array ( "Rosario's","Con un nuevo servicio de restaurante expandido en la Terminal B, el propio Rosario de San Antonio se esfuerza por exceder las expectativas de los huéspedes en cuanto a comida, servicio y diseño general, mientras que realmente crea una sensación de San Antonio dentro del aeropuerto.", "images/16.png", "images/offers/Rosarios/Rosarios-1.png" );
+Hotel_sp[7] = new Array ( "SA Express News","", "images/Stars of San Antonio.jpeg");
+Hotel_sp[8] = new Array ( "Sbarro","Mejor conocido por pizza recién hecha y hecha a mano con los mejores ingredientes. La cocina italiana fresca de Sbarro ofrece recetas de larga tradición como pasta, ensaladas, entrantes y postres.", "images/17.png" , "images/offers/404.png");
+Hotel_sp[9] = new Array ( "Starbucks","Bebidas artesanales y un nombre en el que puede confiar: no hay nada más acogedor que eso. Acurrúcate con una bebida favorita o una creación de té Tazo hoy ... y no te olvides de los biscotti.", "images/18.png", "images/offers/Starbucks/Starbucks-1.png" );
 
 
 if(readCookie("CurrentLanguage") === "English")

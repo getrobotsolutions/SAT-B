@@ -66,7 +66,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
     switch (strContentsName)
     {
         case "Home":
-           location.href = "../../maincontents.htm";
+           location.href = "../../main.htm";
             break;
         case "Eats":
             PlaySpeech(speak[0]);
